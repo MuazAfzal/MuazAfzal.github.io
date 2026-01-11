@@ -66,3 +66,10 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Small hint about the CV file
 const cvHint = document.getElementById("cvHint");
 cvHint.textContent = "If the download doesn’t work, make sure the PDF filename matches exactly.";
+
+// Ensure Instagram embeds render (safe even if embed.js is blocked)
+window.addEventListener("load", () => {
+  if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === "function") {
+    window.instgrm.Embeds.process();
+  }
+});

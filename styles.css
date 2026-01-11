@@ -486,3 +486,31 @@ html[data-theme="light"] .hero-card{
 @media (max-width: 520px){
   .footer{ flex-direction:column; align-items:flex-start; }
 }
+
+/* Media embeds */
+.embed-frame{
+  margin-top:12px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background: rgba(255,255,255,.03);
+  padding:12px;
+}
+
+/* Instagram embed: keep it contained + centered inside the frame */
+.ig-embed{
+  width:100% !important;
+  max-width:520px !important;
+  margin:0 auto !important;
+  border-radius:14px !important;
+  overflow:hidden !important;
+}
+
+/* Light mode: slightly cleaner frame background */
+html[data-theme="light"] .embed-frame{
+  background: rgba(2,6,23,.02);
+}
+
+@media (max-width: 520px){
+  .ig-embed{ max-width:100% !important; }
+}
