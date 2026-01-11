@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muaz Afzal | Portfolio</title>
+  <meta name="description" content="Muaz Afzal - Computer Science student portfolio (AI, ML, Full-Stack, Cybersecurity)." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons (online logos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot"></span>
+        <span>Muaz Afzal</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="Muaz-Afzal-Resume.pdf" download>
+          <i class="fa-solid fa-file-arrow-down"></i>
+          Download CV
+        </a>
+        <button class="icon-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary mobile-cv" href="Muaz-Afzal-Resume.pdf" download>
+        <i class="fa-solid fa-file-arrow-down"></i>
+        Download CV
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="pill">
+            Final-year BSc (Hons) Computer Science • University of Huddersfield
+          </p>
+
+          <h1>
+            Software, AI & data-driven projects — with a practical, build-first mindset.
+          </h1>
+
+          <p class="subhead">
+            I’ve worked on full-stack web systems, machine learning projects (predictive modelling and CNN-based image classification),
+            and cybersecurity-focused analysis work. I enjoy turning ideas into reliable solutions.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">
+              View Projects
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-ghost" href="#contact">
+              Contact
+            </a>
+          </div>
+
+          <div class="social-row" aria-label="Social links">
+            <a class="social" href="https://linkedin.com/in/muaz-afzal" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a class="social" href="https://github.com/MuazAfzal" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a class="social" href="mailto:muazafzal08@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card hero-card">
+            <div class="hero-card-top">
+              <div class="avatar-wrapper">
+                <div class="avatar">
+                  <img src="profile.png" alt="Muaz Afzal profile photo">
+                </div>
+              </div>
+              <div class="hero-card-text">
+                <p class="name">Muaz Afzal</p>
+                <p class="meta">Huddersfield, UK • Willing to relocate</p>
+              </div>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight">
+                <p class="k">Focus</p>
+                <p class="v">ML • Deep Learning • Computer Vision • Cybersecurity</p>
+              </div>
+              <div class="highlight">
+                <p class="k">Tech</p>
+                <p class="v">Python • Java • C • Laravel • MySQL • JS</p>
+              </div>
+              <div class="highlight">
+                <p class="k">Work style</p>
+                <p class="v">Structured, collaborative, and user-focused</p>
+              </div>
+            </div>
+
+            <div class="hero-card-actions">
+              <a class="btn btn-primary full" href="Muaz-Afzal-Resume.pdf" download>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Download CV
+              </a>
+              <a class="btn btn-ghost full" href="#contact">
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            Final-year Computer Science student with hands-on experience in machine learning, data-driven projects, and full-stack web development.
+            I’m interested in graduate opportunities across software, AI, cyber, and data analysis.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What I’ve been building</h3>
+            <ul class="list">
+              <li>Full-stack web platforms (PHP/Laravel + MySQL)</li>
+              <li>Predictive models using cleaned and engineered datasets</li>
+              <li>CNN-based image classification for computer vision tasks</li>
+              <li>Browser-based cybersecurity risk analysis using machine learning</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Quick details</h3>
+            <ul class="facts">
+              <li><span>Location:</span> Huddersfield, UK (willing to relocate)</li>
+              <li><span>Email:</span> muazafzal08@gmail.com</li>
+              <li><span>LinkedIn:</span> linkedin.com/in/muaz-afzal</li>
+              <li><span>GitHub:</span> github.com/MuazAfzal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Key technical skills and tools based on my coursework and projects.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Programming</h3>
+            <p>Python, Java, C (OOP, problem-solving)</p>
+          </div>
+          <div class="card">
+            <h3>ML & Data</h3>
+            <p>Pandas, NumPy, Scikit-learn (cleaning, EDA, feature engineering, modelling, basic image classification)</p>
+          </div>
+          <div class="card">
+            <h3>Web & Databases</h3>
+            <p>HTML, CSS, JavaScript, PHP, Laravel, MySQL (phpMyAdmin)</p>
+          </div>
+          <div class="card">
+            <h3>Cyber Security</h3>
+            <p>Security fundamentals, risk awareness, threat understanding, Linux security tools, secure coding awareness</p>
+          </div>
+          <div class="card">
+            <h3>Tools & Systems</h3>
+            <p>Visual Studio, VS Code, IntelliJ, PyCharm • Windows, Linux (Ubuntu/Kali), macOS</p>
+          </div>
+          <div class="card">
+            <h3>Core strengths</h3>
+            <p>Communication, teamwork, time management, willingness to learn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>A selection of projects based on my CV.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card project">
+            <div class="project-top">
+              <h3>UniLife</h3>
+              <span class="tag">PHP • JS • MySQL</span>
+            </div>
+            <ul class="list">
+              <li>Full-stack web platform supporting international students transitioning to the UK</li>
+              <li>Database integration with MySQL via phpMyAdmin</li>
+              <li>User-focused features with clean UI and structured backend logic</li>
+            </ul>
+            <div class="project-links">
+              <a class="link" href="#" aria-label="Project link placeholder">
+                <i class="fa-solid fa-link"></i> Website (add link)
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Correct Handwashing Prediction Model</h3>
+              <span class="tag">Python • CNN • Computer Vision</span>
+            </div>
+            <ul class="list">
+              <li>Developing a CNN to classify the eight stages of proper handwashing (WHO-based)</li>
+              <li>Image collection, preprocessing, augmentation, training and evaluation</li>
+              <li>Focused on robustness and reducing overfitting</li>
+            </ul>
+            <div class="project-links">
+              <a class="link" href="#" aria-label="Project link placeholder">
+                <i class="fa-solid fa-link"></i> Repository (add link)
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Web-Based Manufacturer Management System</h3>
+              <span class="tag">Laravel • PHP • MySQL</span>
+            </div>
+            <ul class="list">
+              <li>Web system to store, update and manage manufacturer information</li>
+              <li>MVC structure with validation, routing and responsive UI</li>
+              <li>Designed for maintainability using Laravel best practices</li>
+            </ul>
+            <div class="project-links">
+              <a class="link" href="#" aria-label="Project link placeholder">
+                <i class="fa-solid fa-link"></i> Repository (add link)
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="project-top">
+              <h3>Browser-Based Cyber Security Risk Analysis Using Machine Learning</h3>
+              <span class="tag">Python • ML • Cyber</span>
+            </div>
+            <ul class="list">
+              <li>Developing an ML-based approach to analyse cybersecurity risks and patterns</li>
+              <li>Preprocessing, feature engineering and classification for risk assessment support</li>
+              <li>Exploring how ML can help prioritise risks and improve reliability</li>
+            </ul>
+            <div class="project-links">
+              <a class="link" href="#" aria-label="Project link placeholder">
+                <i class="fa-solid fa-link"></i> Repository (add link)
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note">
+          <p><strong>Tip:</strong> Replace “add link” placeholders with your real GitHub/website URLs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience & Volunteering</h2>
+          <p>Roles that built communication, teamwork and responsibility.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="card timeline-item">
+            <div class="timeline-top">
+              <h3>Crew Member — McDonald’s</h3>
+              <span class="muted">Nov 2023 – Present</span>
+            </div>
+            <ul class="list">
+              <li>Handled customer needs and resolved issues using clear communication</li>
+              <li>Developed time management and multitasking in a fast-paced environment</li>
+              <li>Worked as part of a team, adapting to different tasks quickly</li>
+            </ul>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-top">
+              <h3>Academic Rep — University of Huddersfield</h3>
+              <span class="muted">Nov 2026 – Present</span>
+            </div>
+            <ul class="list">
+              <li>Represented students in faculty meetings and communicated concerns</li>
+              <li>Provided feedback to support improvements in course delivery</li>
+            </ul>
+          </div>
+
+          <div class="card timeline-item">
+            <div class="timeline-top">
+              <h3>Social Media Officer — Bangladeshi Student Society</h3>
+              <span class="muted">Jul 2025 – Present</span>
+            </div>
+            <ul class="list">
+              <li>Created and managed content to promote events and engage members</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head">
+          <h2>Education</h2>
+          <p>Academic background and achievements.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>University of Huddersfield</h3>
+            <p class="muted">BSc (Hons) Computer Science SW</p>
+            <p><strong>Overall Predicted Grade:</strong> First Class Honours (1:1)</p>
+            <p class="muted">Relevant modules: AI, Algorithms & Data Structures, Software Design & Development, Cyber Security, Operating Systems</p>
+          </div>
+
+          <div class="card">
+            <h3>Certificates</h3>
+            <ul class="list">
+              <li>£9,000 Academic Excellence Scholarship (merit-based)</li>
+              <li>Global Professional Award (GPA): completed first and second year with 100%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 16px;">
+          <h3>Activities</h3>
+          <ul class="list">
+            <li>Active participant in university sports</li>
+            <li>Member of the Cyber Security Society</li>
+            <li>Self-taught: Adobe Illustrator, Photoshop, Animate, Canva, Wondershare Filmora</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>If you’d like to connect about opportunities, projects, or collaborations, feel free to reach out.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <div class="contact-list">
+              <a class="contact-item" href="mailto:muazafzal08@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>muazafzal08@gmail.com</span>
+              </a>
+              <a class="contact-item" href="https://linkedin.com/in/muaz-afzal" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>linkedin.com/in/muaz-afzal</span>
+              </a>
+              <a class="contact-item" href="https://github.com/MuazAfzal" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>github.com/MuazAfzal</span>
+              </a>
+            </div>
+            <div class="contact-form-wrap">
+              <h4 class="form-title">Send a message</h4>
+
+              <!-- Formspree contact form -->
+              <form class="contact-form" action="https://formspree.io/f/xnjjawdn" method="POST">
+                <label class="form-label">
+                  Your email
+                  <input class="form-input" type="email" name="email" placeholder="you@example.com" required>
+                </label>
+
+                <label class="form-label">
+                  Your message
+                  <textarea class="form-textarea" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                </label>
+
+                <button class="btn btn-primary full" type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Send
+                </button>
+              </form>
+
+              <p class="muted small form-note">
+                This form uses Formspree. You’ll receive messages through your Formspree setup.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Download</h3>
+            <p class="muted">
+              Put your PDF in the same folder as this website and name it:
+              <strong>Muaz-Afzal-Resume.pdf</strong>
+            </p>
+            <a class="btn btn-primary full" href="Muaz-Afzal-Resume.pdf" download>
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download CV
+            </a>
+            <p class="muted small" id="cvHint"></p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Muaz Afzal | All rights reserved </p>
+          <a href="#top" class="link"><i class="fa-solid fa-arrow-up"></i> Back to top</a>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
