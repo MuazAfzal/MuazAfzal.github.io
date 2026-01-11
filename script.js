@@ -2,6 +2,41 @@
 const menuBtn = document.getElementById("menuBtn");
 const mobileNav = document.getElementById("mobileNav");
 
+// Theme toggle (light/dark) with persistence
+const themeBtn = document.getElementById("themeBtn");
+const root = document.documentElement;
+
+function setTheme(mode) {
+  root.setAttribute("data-theme", mode);
+  localStorage.setItem("theme", mode);
+
+  // Update icon + accessible label
+  if (themeBtn) {
+    themeBtn.innerHTML = mode === "light"
+      ? '<i class="fa-solid fa-moon"></i>'
+      : '<i class="fa-solid fa-sun"></i>';
+    themeBtn.setAttribute(
+      "aria-label",
+      `Switch to ${mode === "light" ? "dark" : "light"} mode`
+    );
+  }
+}
+
+// Load saved preference or system default
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  setTheme(savedTheme);
+} else {
+  const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+  setTheme(prefersLight ? "light" : "dark");
+}
+
+// Toggle on click
+themeBtn?.addEventListener("click", () => {
+  const current = root.getAttribute("data-theme") || "dark";
+  setTheme(current === "dark" ? "light" : "dark");
+});
+
 function setMenu(open) {
   mobileNav.style.display = open ? "block" : "none";
   mobileNav.setAttribute("aria-hidden", open ? "false" : "true");
